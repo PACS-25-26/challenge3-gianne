@@ -27,8 +27,6 @@ measure the discrete **L2 error** against the known solution.
   `MPI_Sendrecv`.
 - **OpenMP** – inside each process the loop over the local rows of the Jacobi
   sweep is parallelised with `#pragma omp parallel for`.
-- **Matrix-free** – no sparse matrix is built. The grid is a flat
-  `std::vector<double>` (two buffers, old and new).
 
 ## Files
 
@@ -39,7 +37,6 @@ challenge3/
 ├── main.cpp               # argument parsing, problem setup, timing, output
 ├── Grid2D.hpp / .cpp      # local grid with ghost rows and (i,j) indexing
 ├── LaplaceSolver.hpp/.cpp # Jacobi loops, MPI halo exchange, OpenMP, VTK, L2 error
-├── hw.info                # hardware description
 ├── .gitignore
 ├── README.md
 └── test/
@@ -53,7 +50,7 @@ challenge3/
 
 ## Build
 
-With the Makefile (recommended, no executables are committed):
+With the Makefile:
 
 ```bash
 make
@@ -122,4 +119,3 @@ This builds the code and runs the full strong-scaling study (every grid
 speedup and efficiency. Run it on a **compute node**. The saved results are in
 `test/data/` (`dati_consegna.txt`) and the plots in `test/data/figura.png`; the
 discussion is in `test/RESULT.md`.
-```
