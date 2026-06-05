@@ -38,6 +38,7 @@
 *.exe
 *.out
 *.app
+laplace_solver
 
 # Build directories
 build/
@@ -45,10 +46,10 @@ Build/
 build-*/
 
 # CMake generated files
+# (NOTE: our project ships a hand-written Makefile, so "Makefile" is NOT ignored)
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
 install_manifest.txt
 compile_commands.json
 
@@ -67,3 +68,9 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# IDE project files
+.idea/
+
+# Program output (regenerable, not committed)
+*.vtk

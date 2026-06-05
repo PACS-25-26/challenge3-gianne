@@ -1,0 +1,670 @@
+=== INIZIO TEST DI SCALABILITA' (SERIAL VS PARALLEL) ===
+======================================
+ GRIGLIA: 16 x 16
+======================================
+--> Seriale (1 Processore)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 16 x 16
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.169888
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 134
+Residual   : 9.28976e-07
+L2 error   : 0.028555
+Time (s)   : 0.0064269
+--> Parallelo (2 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 16 x 16
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.169888
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 134
+Residual   : 9.28976e-07
+L2 error   : 0.028555
+Time (s)   : 0.00233615
+--> Parallelo (4 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 16 x 16
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.169888
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 134
+Residual   : 9.28976e-07
+L2 error   : 0.028555
+Time (s)   : 0.0143366
+
+======================================
+ GRIGLIA: 32 x 32
+======================================
+--> Seriale (1 Processore)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 32 x 32
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0571817
+iter 200   residual = 0.000913693
+iter 400   residual = 1.45997e-05
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 530
+Residual   : 9.92308e-07
+L2 error   : 0.00950241
+Time (s)   : 0.0900846
+--> Parallelo (2 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 32 x 32
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0571817
+iter 200   residual = 0.000913693
+iter 400   residual = 1.45997e-05
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 530
+Residual   : 9.92308e-07
+L2 error   : 0.00950241
+Time (s)   : 0.0752767
+--> Parallelo (4 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 32 x 32
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0571817
+iter 200   residual = 0.000913693
+iter 400   residual = 1.45997e-05
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 530
+Residual   : 9.92308e-07
+L2 error   : 0.00950241
+Time (s)   : 0.104765
+
+======================================
+ GRIGLIA: 64 x 64
+======================================
+--> Seriale (1 Processore)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 64 x 64
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0197374
+iter 200   residual = 0.00728772
+iter 400   residual = 0.00269088
+iter 600   residual = 0.000993566
+iter 800   residual = 0.000366859
+iter 1000   residual = 0.000135457
+iter 1200   residual = 5.00155e-05
+iter 1400   residual = 1.84675e-05
+iter 1600   residual = 6.81883e-06
+iter 1800   residual = 2.51775e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 1986
+Residual   : 9.96791e-07
+L2 error   : 0.0030916
+Time (s)   : 0.772507
+--> Parallelo (2 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 64 x 64
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0197374
+iter 200   residual = 0.00728772
+iter 400   residual = 0.00269088
+iter 600   residual = 0.000993566
+iter 800   residual = 0.000366859
+iter 1000   residual = 0.000135457
+iter 1200   residual = 5.00155e-05
+iter 1400   residual = 1.84675e-05
+iter 1600   residual = 6.81883e-06
+iter 1800   residual = 2.51775e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 1986
+Residual   : 9.96791e-07
+L2 error   : 0.0030916
+Time (s)   : 0.452534
+--> Parallelo (4 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 64 x 64
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.0197374
+iter 200   residual = 0.00728772
+iter 400   residual = 0.00269088
+iter 600   residual = 0.000993566
+iter 800   residual = 0.000366859
+iter 1000   residual = 0.000135457
+iter 1200   residual = 5.00155e-05
+iter 1400   residual = 1.84675e-05
+iter 1600   residual = 6.81883e-06
+iter 1800   residual = 2.51775e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 1986
+Residual   : 9.96791e-07
+L2 error   : 0.0030916
+Time (s)   : 0.456841
+
+======================================
+ GRIGLIA: 128 x 128
+======================================
+--> Seriale (1 Processore)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 128 x 128
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00689595
+iter 200   residual = 0.00539821
+iter 400   residual = 0.00422577
+iter 600   residual = 0.00330797
+iter 800   residual = 0.00258951
+iter 1000   residual = 0.00202709
+iter 1200   residual = 0.00158682
+iter 1400   residual = 0.00124218
+iter 1600   residual = 0.00097239
+iter 1800   residual = 0.000761196
+iter 2000   residual = 0.000595871
+iter 2200   residual = 0.000466453
+iter 2400   residual = 0.000365144
+iter 2600   residual = 0.000285838
+iter 2800   residual = 0.000223756
+iter 3000   residual = 0.000175158
+iter 3200   residual = 0.000137116
+iter 3400   residual = 0.000107335
+iter 3600   residual = 8.4023e-05
+iter 3800   residual = 6.5774e-05
+iter 4000   residual = 5.14885e-05
+iter 4200   residual = 4.03056e-05
+iter 4400   residual = 3.15516e-05
+iter 4600   residual = 2.46989e-05
+iter 4800   residual = 1.93345e-05
+iter 5000   residual = 1.51352e-05
+iter 5200   residual = 1.1848e-05
+iter 5400   residual = 9.27471e-06
+iter 5600   residual = 7.26033e-06
+iter 5800   residual = 5.68345e-06
+iter 6000   residual = 4.44906e-06
+iter 6200   residual = 3.48276e-06
+iter 6400   residual = 2.72634e-06
+iter 6600   residual = 2.1342e-06
+iter 6800   residual = 1.67067e-06
+iter 7000   residual = 1.30782e-06
+iter 7200   residual = 1.02377e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 7220
+Residual   : 9.99006e-07
+L2 error   : 0.000334006
+Time (s)   : 12.0186
+--> Parallelo (2 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 128 x 128
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00689595
+iter 200   residual = 0.00539821
+iter 400   residual = 0.00422577
+iter 600   residual = 0.00330797
+iter 800   residual = 0.00258951
+iter 1000   residual = 0.00202709
+iter 1200   residual = 0.00158682
+iter 1400   residual = 0.00124218
+iter 1600   residual = 0.00097239
+iter 1800   residual = 0.000761196
+iter 2000   residual = 0.000595871
+iter 2200   residual = 0.000466453
+iter 2400   residual = 0.000365144
+iter 2600   residual = 0.000285838
+iter 2800   residual = 0.000223756
+iter 3000   residual = 0.000175158
+iter 3200   residual = 0.000137116
+iter 3400   residual = 0.000107335
+iter 3600   residual = 8.4023e-05
+iter 3800   residual = 6.5774e-05
+iter 4000   residual = 5.14885e-05
+iter 4200   residual = 4.03056e-05
+iter 4400   residual = 3.15516e-05
+iter 4600   residual = 2.46989e-05
+iter 4800   residual = 1.93345e-05
+iter 5000   residual = 1.51352e-05
+iter 5200   residual = 1.1848e-05
+iter 5400   residual = 9.27471e-06
+iter 5600   residual = 7.26033e-06
+iter 5800   residual = 5.68345e-06
+iter 6000   residual = 4.44906e-06
+iter 6200   residual = 3.48276e-06
+iter 6400   residual = 2.72634e-06
+iter 6600   residual = 2.1342e-06
+iter 6800   residual = 1.67067e-06
+iter 7000   residual = 1.30782e-06
+iter 7200   residual = 1.02377e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 7220
+Residual   : 9.99006e-07
+L2 error   : 0.000334006
+Time (s)   : 8.2397
+--> Parallelo (4 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 128 x 128
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00689595
+iter 200   residual = 0.00539821
+iter 400   residual = 0.00422577
+iter 600   residual = 0.00330797
+iter 800   residual = 0.00258951
+iter 1000   residual = 0.00202709
+iter 1200   residual = 0.00158682
+iter 1400   residual = 0.00124218
+iter 1600   residual = 0.00097239
+iter 1800   residual = 0.000761196
+iter 2000   residual = 0.000595871
+iter 2200   residual = 0.000466453
+iter 2400   residual = 0.000365144
+iter 2600   residual = 0.000285838
+iter 2800   residual = 0.000223756
+iter 3000   residual = 0.000175158
+iter 3200   residual = 0.000137116
+iter 3400   residual = 0.000107335
+iter 3600   residual = 8.4023e-05
+iter 3800   residual = 6.5774e-05
+iter 4000   residual = 5.14885e-05
+iter 4200   residual = 4.03056e-05
+iter 4400   residual = 3.15516e-05
+iter 4600   residual = 2.46989e-05
+iter 4800   residual = 1.93345e-05
+iter 5000   residual = 1.51352e-05
+iter 5200   residual = 1.1848e-05
+iter 5400   residual = 9.27471e-06
+iter 5600   residual = 7.26033e-06
+iter 5800   residual = 5.68345e-06
+iter 6000   residual = 4.44906e-06
+iter 6200   residual = 3.48276e-06
+iter 6400   residual = 2.72634e-06
+iter 6600   residual = 2.1342e-06
+iter 6800   residual = 1.67067e-06
+iter 7000   residual = 1.30782e-06
+iter 7200   residual = 1.02377e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 7220
+Residual   : 9.99006e-07
+L2 error   : 0.000334006
+Time (s)   : 6.77664
+
+======================================
+ GRIGLIA: 256 x 256
+======================================
+--> Seriale (1 Processore)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 256 x 256
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00242376
+iter 200   residual = 0.00228097
+iter 400   residual = 0.00214659
+iter 600   residual = 0.00202013
+iter 800   residual = 0.00190112
+iter 1000   residual = 0.00178912
+iter 1200   residual = 0.00168372
+iter 1400   residual = 0.00158453
+iter 1600   residual = 0.00149118
+iter 1800   residual = 0.00140333
+iter 2000   residual = 0.00132066
+iter 2200   residual = 0.00124286
+iter 2400   residual = 0.00116964
+iter 2600   residual = 0.00110073
+iter 2800   residual = 0.00103589
+iter 3000   residual = 0.000974859
+iter 3200   residual = 0.000917428
+iter 3400   residual = 0.00086338
+iter 3600   residual = 0.000812517
+iter 3800   residual = 0.000764649
+iter 4000   residual = 0.000719602
+iter 4200   residual = 0.000677209
+iter 4400   residual = 0.000637313
+iter 4600   residual = 0.000599768
+iter 4800   residual = 0.000564434
+iter 5000   residual = 0.000531182
+iter 5200   residual = 0.000499889
+iter 5400   residual = 0.000470439
+iter 5600   residual = 0.000442725
+iter 5800   residual = 0.000416643
+iter 6000   residual = 0.000392097
+iter 6200   residual = 0.000368998
+iter 6400   residual = 0.00034726
+iter 6600   residual = 0.000326802
+iter 6800   residual = 0.000307549
+iter 7000   residual = 0.000289431
+iter 7200   residual = 0.00027238
+iter 7400   residual = 0.000256333
+iter 7600   residual = 0.000241232
+iter 7800   residual = 0.000227021
+iter 8000   residual = 0.000213646
+iter 8200   residual = 0.00020106
+iter 8400   residual = 0.000189215
+iter 8600   residual = 0.000178068
+iter 8800   residual = 0.000167578
+iter 9000   residual = 0.000157705
+iter 9200   residual = 0.000148415
+iter 9400   residual = 0.000139671
+iter 9600   residual = 0.000131443
+iter 9800   residual = 0.000123699
+iter 10000   residual = 0.000116412
+iter 10200   residual = 0.000109554
+iter 10400   residual = 0.0001031
+iter 10600   residual = 9.70259e-05
+iter 10800   residual = 9.13099e-05
+iter 11000   residual = 8.59306e-05
+iter 11200   residual = 8.08682e-05
+iter 11400   residual = 7.61041e-05
+iter 11600   residual = 7.16206e-05
+iter 11800   residual = 6.74013e-05
+iter 12000   residual = 6.34306e-05
+iter 12200   residual = 5.96937e-05
+iter 12400   residual = 5.6177e-05
+iter 12600   residual = 5.28675e-05
+iter 12800   residual = 4.9753e-05
+iter 13000   residual = 4.68219e-05
+iter 13200   residual = 4.40635e-05
+iter 13400   residual = 4.14677e-05
+iter 13600   residual = 3.90247e-05
+iter 13800   residual = 3.67257e-05
+iter 14000   residual = 3.45621e-05
+iter 14200   residual = 3.2526e-05
+iter 14400   residual = 3.06098e-05
+iter 14600   residual = 2.88065e-05
+iter 14800   residual = 2.71094e-05
+iter 15000   residual = 2.55124e-05
+iter 15200   residual = 2.40094e-05
+iter 15400   residual = 2.25949e-05
+iter 15600   residual = 2.12638e-05
+iter 15800   residual = 2.00111e-05
+iter 16000   residual = 1.88322e-05
+iter 16200   residual = 1.77228e-05
+iter 16400   residual = 1.66787e-05
+iter 16600   residual = 1.56961e-05
+iter 16800   residual = 1.47714e-05
+iter 17000   residual = 1.39012e-05
+iter 17200   residual = 1.30823e-05
+iter 17400   residual = 1.23115e-05
+iter 17600   residual = 1.15862e-05
+iter 17800   residual = 1.09037e-05
+iter 18000   residual = 1.02613e-05
+iter 18200   residual = 9.6568e-06
+iter 18400   residual = 9.0879e-06
+iter 18600   residual = 8.55251e-06
+iter 18800   residual = 8.04866e-06
+iter 19000   residual = 7.5745e-06
+iter 19200   residual = 7.12827e-06
+iter 19400   residual = 6.70833e-06
+iter 19600   residual = 6.31312e-06
+iter 19800   residual = 5.9412e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 20000
+Residual   : 5.59289e-06
+L2 error   : 0.0180155
+Time (s)   : 133.939
+--> Parallelo (2 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 256 x 256
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00242376
+iter 200   residual = 0.00228097
+iter 400   residual = 0.00214659
+iter 600   residual = 0.00202013
+iter 800   residual = 0.00190112
+iter 1000   residual = 0.00178912
+iter 1200   residual = 0.00168372
+iter 1400   residual = 0.00158453
+iter 1600   residual = 0.00149118
+iter 1800   residual = 0.00140333
+iter 2000   residual = 0.00132066
+iter 2200   residual = 0.00124286
+iter 2400   residual = 0.00116964
+iter 2600   residual = 0.00110073
+iter 2800   residual = 0.00103589
+iter 3000   residual = 0.000974859
+iter 3200   residual = 0.000917428
+iter 3400   residual = 0.00086338
+iter 3600   residual = 0.000812517
+iter 3800   residual = 0.000764649
+iter 4000   residual = 0.000719602
+iter 4200   residual = 0.000677209
+iter 4400   residual = 0.000637313
+iter 4600   residual = 0.000599768
+iter 4800   residual = 0.000564434
+iter 5000   residual = 0.000531182
+iter 5200   residual = 0.000499889
+iter 5400   residual = 0.000470439
+iter 5600   residual = 0.000442725
+iter 5800   residual = 0.000416643
+iter 6000   residual = 0.000392097
+iter 6200   residual = 0.000368998
+iter 6400   residual = 0.00034726
+iter 6600   residual = 0.000326802
+iter 6800   residual = 0.000307549
+iter 7000   residual = 0.000289431
+iter 7200   residual = 0.00027238
+iter 7400   residual = 0.000256333
+iter 7600   residual = 0.000241232
+iter 7800   residual = 0.000227021
+iter 8000   residual = 0.000213646
+iter 8200   residual = 0.00020106
+iter 8400   residual = 0.000189215
+iter 8600   residual = 0.000178068
+iter 8800   residual = 0.000167578
+iter 9000   residual = 0.000157705
+iter 9200   residual = 0.000148415
+iter 9400   residual = 0.000139671
+iter 9600   residual = 0.000131443
+iter 9800   residual = 0.000123699
+iter 10000   residual = 0.000116412
+iter 10200   residual = 0.000109554
+iter 10400   residual = 0.0001031
+iter 10600   residual = 9.70259e-05
+iter 10800   residual = 9.13099e-05
+iter 11000   residual = 8.59306e-05
+iter 11200   residual = 8.08682e-05
+iter 11400   residual = 7.61041e-05
+iter 11600   residual = 7.16206e-05
+iter 11800   residual = 6.74013e-05
+iter 12000   residual = 6.34306e-05
+iter 12200   residual = 5.96937e-05
+iter 12400   residual = 5.6177e-05
+iter 12600   residual = 5.28675e-05
+iter 12800   residual = 4.9753e-05
+iter 13000   residual = 4.68219e-05
+iter 13200   residual = 4.40635e-05
+iter 13400   residual = 4.14677e-05
+iter 13600   residual = 3.90247e-05
+iter 13800   residual = 3.67257e-05
+iter 14000   residual = 3.45621e-05
+iter 14200   residual = 3.2526e-05
+iter 14400   residual = 3.06098e-05
+iter 14600   residual = 2.88065e-05
+iter 14800   residual = 2.71094e-05
+iter 15000   residual = 2.55124e-05
+iter 15200   residual = 2.40094e-05
+iter 15400   residual = 2.25949e-05
+iter 15600   residual = 2.12638e-05
+iter 15800   residual = 2.00111e-05
+iter 16000   residual = 1.88322e-05
+iter 16200   residual = 1.77228e-05
+iter 16400   residual = 1.66787e-05
+iter 16600   residual = 1.56961e-05
+iter 16800   residual = 1.47714e-05
+iter 17000   residual = 1.39012e-05
+iter 17200   residual = 1.30823e-05
+iter 17400   residual = 1.23115e-05
+iter 17600   residual = 1.15862e-05
+iter 17800   residual = 1.09037e-05
+iter 18000   residual = 1.02613e-05
+iter 18200   residual = 9.6568e-06
+iter 18400   residual = 9.0879e-06
+iter 18600   residual = 8.55251e-06
+iter 18800   residual = 8.04866e-06
+iter 19000   residual = 7.5745e-06
+iter 19200   residual = 7.12827e-06
+iter 19400   residual = 6.70833e-06
+iter 19600   residual = 6.31312e-06
+iter 19800   residual = 5.9412e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 20000
+Residual   : 5.59289e-06
+L2 error   : 0.0180155
+Time (s)   : 78.4215
+--> Parallelo (4 Processori)
+=== Laplace Solver (Jacobi, MPI + OpenMP) ===
+Grid       : 256 x 256
+Max iter   : 20000
+Tolerance  : 1e-06
+Mode       : Standard Jacobi
+-------------------------------------------
+iter 0   residual = 0.00242376
+iter 200   residual = 0.00228097
+iter 400   residual = 0.00214659
+iter 600   residual = 0.00202013
+iter 800   residual = 0.00190112
+iter 1000   residual = 0.00178912
+iter 1200   residual = 0.00168372
+iter 1400   residual = 0.00158453
+iter 1600   residual = 0.00149118
+iter 1800   residual = 0.00140333
+iter 2000   residual = 0.00132066
+iter 2200   residual = 0.00124286
+iter 2400   residual = 0.00116964
+iter 2600   residual = 0.00110073
+iter 2800   residual = 0.00103589
+iter 3000   residual = 0.000974859
+iter 3200   residual = 0.000917428
+iter 3400   residual = 0.00086338
+iter 3600   residual = 0.000812517
+iter 3800   residual = 0.000764649
+iter 4000   residual = 0.000719602
+iter 4200   residual = 0.000677209
+iter 4400   residual = 0.000637313
+iter 4600   residual = 0.000599768
+iter 4800   residual = 0.000564434
+iter 5000   residual = 0.000531182
+iter 5200   residual = 0.000499889
+iter 5400   residual = 0.000470439
+iter 5600   residual = 0.000442725
+iter 5800   residual = 0.000416643
+iter 6000   residual = 0.000392097
+iter 6200   residual = 0.000368998
+iter 6400   residual = 0.00034726
+iter 6600   residual = 0.000326802
+iter 6800   residual = 0.000307549
+iter 7000   residual = 0.000289431
+iter 7200   residual = 0.00027238
+iter 7400   residual = 0.000256333
+iter 7600   residual = 0.000241232
+iter 7800   residual = 0.000227021
+iter 8000   residual = 0.000213646
+iter 8200   residual = 0.00020106
+iter 8400   residual = 0.000189215
+iter 8600   residual = 0.000178068
+iter 8800   residual = 0.000167578
+iter 9000   residual = 0.000157705
+iter 9200   residual = 0.000148415
+iter 9400   residual = 0.000139671
+iter 9600   residual = 0.000131443
+iter 9800   residual = 0.000123699
+iter 10000   residual = 0.000116412
+iter 10200   residual = 0.000109554
+iter 10400   residual = 0.0001031
+iter 10600   residual = 9.70259e-05
+iter 10800   residual = 9.13099e-05
+iter 11000   residual = 8.59306e-05
+iter 11200   residual = 8.08682e-05
+iter 11400   residual = 7.61041e-05
+iter 11600   residual = 7.16206e-05
+iter 11800   residual = 6.74013e-05
+iter 12000   residual = 6.34306e-05
+iter 12200   residual = 5.96937e-05
+iter 12400   residual = 5.6177e-05
+iter 12600   residual = 5.28675e-05
+iter 12800   residual = 4.9753e-05
+iter 13000   residual = 4.68219e-05
+iter 13200   residual = 4.40635e-05
+iter 13400   residual = 4.14677e-05
+iter 13600   residual = 3.90247e-05
+iter 13800   residual = 3.67257e-05
+iter 14000   residual = 3.45621e-05
+iter 14200   residual = 3.2526e-05
+iter 14400   residual = 3.06098e-05
+iter 14600   residual = 2.88065e-05
+iter 14800   residual = 2.71094e-05
+iter 15000   residual = 2.55124e-05
+iter 15200   residual = 2.40094e-05
+iter 15400   residual = 2.25949e-05
+iter 15600   residual = 2.12638e-05
+iter 15800   residual = 2.00111e-05
+iter 16000   residual = 1.88322e-05
+iter 16200   residual = 1.77228e-05
+iter 16400   residual = 1.66787e-05
+iter 16600   residual = 1.56961e-05
+iter 16800   residual = 1.47714e-05
+iter 17000   residual = 1.39012e-05
+iter 17200   residual = 1.30823e-05
+iter 17400   residual = 1.23115e-05
+iter 17600   residual = 1.15862e-05
+iter 17800   residual = 1.09037e-05
+iter 18000   residual = 1.02613e-05
+iter 18200   residual = 9.6568e-06
+iter 18400   residual = 9.0879e-06
+iter 18600   residual = 8.55251e-06
+iter 18800   residual = 8.04866e-06
+iter 19000   residual = 7.5745e-06
+iter 19200   residual = 7.12827e-06
+iter 19400   residual = 6.70833e-06
+iter 19600   residual = 6.31312e-06
+iter 19800   residual = 5.9412e-06
+Solution written to solution.vtk
+-------------------------------------------
+Iterations : 20000
+Residual   : 5.59289e-06
+L2 error   : 0.0180155
+Time (s)   : 50.4633
+
+=== TEST COMPLETATO ===
